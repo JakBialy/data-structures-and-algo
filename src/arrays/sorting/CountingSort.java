@@ -11,14 +11,14 @@ public class CountingSort {
         Arrays.stream(intArray).forEach(System.out::println);
     }
 
-    public static void countingSort(int[] input, int min, int max){
+    private static void countingSort(int[] input, int min, int max){
 
         int[] countArray = new int[(max - min) +1];
 
         // counting phase
         // min is for skipping unused values
-        for (int i = 0; i < input.length; i++) {
-            countArray[input[i] - min]++;
+        for (int value : input) {
+            countArray[value - min]++;
         }
 
         // array tracker
