@@ -1,4 +1,4 @@
-package lists;
+package lists.SingleLinkedList;
 
 import java.util.Objects;
 

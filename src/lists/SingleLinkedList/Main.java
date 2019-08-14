@@ -1,4 +1,4 @@
-package lists;
+package lists.SingleLinkedList;
 
 public class Main {
 
