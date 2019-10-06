@@ -12,8 +12,11 @@ public class Main {
         employeeLinkedList.addToTail(one);
         employeeLinkedList.addToTail(two);
         employeeLinkedList.addToTail(three);
-        System.out.println(employeeLinkedList.getSize());
-        employeeLinkedList.removeFromTheEnd();
+        employeeLinkedList.printList();
+
+        Employee toAdd = new Employee("NewOne", "Hoe", 126);
+
+        employeeLinkedList.addBefore(toAdd, one);
         System.out.println(employeeLinkedList.getSize());
         employeeLinkedList.printList();
 

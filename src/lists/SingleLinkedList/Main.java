@@ -3,21 +3,20 @@ package lists.SingleLinkedList;
 public class Main {
 
     public static void main(String[] args) {
-        Employee one = new Employee("Jane", "Doe", 123);
-        Employee two = new Employee("Mary", "Doe", 124);
-        Employee three = new Employee("John", "Doe", 125);
+        Integer one = 1;
+        Integer two = 10;
+        Integer three = 2;
+        Integer four = 4;
 
-        EmployeeLinkedList employeeLinkedList = new EmployeeLinkedList();
-        employeeLinkedList.addToFront(one);
-        employeeLinkedList.addToFront(two);
-        employeeLinkedList.addToFront(three);
+        IntegerSinglyLinkedList integerSinglyLinkedList = new IntegerSinglyLinkedList();
+        integerSinglyLinkedList.insertInSortedOrder(one);
+        integerSinglyLinkedList.insertInSortedOrder(two);
+        integerSinglyLinkedList.insertInSortedOrder(three);
+        integerSinglyLinkedList.insertInSortedOrder(four);
 
-        employeeLinkedList.printList();
-        System.out.println(employeeLinkedList.getSize());
-        employeeLinkedList.addToFront(one);
-        System.out.println(employeeLinkedList.getSize());
-        employeeLinkedList.removeFromTheFront();
-        System.out.println(employeeLinkedList.getSize());
-        employeeLinkedList.printList();
+        integerSinglyLinkedList.printList();
+        System.out.println(integerSinglyLinkedList.getSize());
+
+
     }
 }
